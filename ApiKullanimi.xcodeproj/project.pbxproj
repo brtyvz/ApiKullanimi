@@ -13,6 +13,9 @@
 		5B47AB5F27F5C48100890660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B47AB5D27F5C48100890660 /* Main.storyboard */; };
 		5B47AB6127F5C48200890660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B47AB6027F5C48200890660 /* Assets.xcassets */; };
 		5B47AB6427F5C48200890660 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B47AB6227F5C48200890660 /* LaunchScreen.storyboard */; };
+		5B47AB6E27F5CEEB00890660 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B47AB6D27F5CEEB00890660 /* NewsCell.swift */; };
+		5B47AB7427F5D5DE00890660 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B47AB7327F5D5DE00890660 /* News.swift */; };
+		5B47AB7627F5D84100890660 /* webService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B47AB7527F5D84100890660 /* webService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		5B47AB6027F5C48200890660 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B47AB6327F5C48200890660 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B47AB6527F5C48200890660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B47AB6D27F5CEEB00890660 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		5B47AB7327F5D5DE00890660 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		5B47AB7527F5D84100890660 /* webService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		5B47AB5627F5C48100890660 /* ApiKullanimi */ = {
 			isa = PBXGroup;
 			children = (
-				5B47AB5727F5C48100890660 /* AppDelegate.swift */,
-				5B47AB5927F5C48100890660 /* SceneDelegate.swift */,
-				5B47AB5B27F5C48100890660 /* ViewController.swift */,
-				5B47AB5D27F5C48100890660 /* Main.storyboard */,
+				5B47AB7227F5D57200890660 /* Service */,
+				5B47AB7127F5D55100890660 /* ViewModal */,
+				5B47AB7027F5D53300890660 /* Modal */,
+				5B47AB6F27F5D52700890660 /* View */,
 				5B47AB6027F5C48200890660 /* Assets.xcassets */,
 				5B47AB6227F5C48200890660 /* LaunchScreen.storyboard */,
+				5B47AB5D27F5C48100890660 /* Main.storyboard */,
 				5B47AB6527F5C48200890660 /* Info.plist */,
 			);
 			path = ApiKullanimi;
+			sourceTree = "<group>";
+		};
+		5B47AB6F27F5D52700890660 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B47AB5727F5C48100890660 /* AppDelegate.swift */,
+				5B47AB5927F5C48100890660 /* SceneDelegate.swift */,
+				5B47AB5B27F5C48100890660 /* ViewController.swift */,
+				5B47AB6D27F5CEEB00890660 /* NewsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B47AB7027F5D53300890660 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				5B47AB7327F5D5DE00890660 /* News.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		5B47AB7127F5D55100890660 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		5B47AB7227F5D57200890660 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5B47AB7527F5D84100890660 /* webService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +180,9 @@
 			files = (
 				5B47AB5C27F5C48100890660 /* ViewController.swift in Sources */,
 				5B47AB5827F5C48100890660 /* AppDelegate.swift in Sources */,
+				5B47AB7627F5D84100890660 /* webService.swift in Sources */,
+				5B47AB6E27F5CEEB00890660 /* NewsCell.swift in Sources */,
+				5B47AB7427F5D5DE00890660 /* News.swift in Sources */,
 				5B47AB5A27F5C48100890660 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
