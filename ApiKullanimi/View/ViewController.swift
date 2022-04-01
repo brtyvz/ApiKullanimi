@@ -19,6 +19,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = UITableView.automaticDimension
         veriAl()
       
     }
@@ -54,6 +56,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cell.storyLabel.text = newsViewModal.story
         
     return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 
 }
